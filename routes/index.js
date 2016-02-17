@@ -6,6 +6,9 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
+router.get('/api/v1/webhook', function(req, res, next) {
+  res.render('index', { title: 'Express' });
+});
 
 router.post('/api/v1/webhook',
   function (req, res, next) {
