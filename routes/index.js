@@ -13,7 +13,7 @@ router.get('/api/v1/webhook', function(req, res, next) {
 router.post('/api/v1/webhook',
   function (req, res, next) {
         console.log(req.body.text);
-        res.end('Authenticated')
+        res.end();
 });
   
 module.exports = router;
