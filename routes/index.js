@@ -13,6 +13,7 @@ router.get('/api/v1/webhook', function(req, res, next) {
 router.post('/api/v1/webhook',
   function (req, res, next) {
         console.log(req.body.text);
+        console.log(req.headers);
         res.end();
 });
   
